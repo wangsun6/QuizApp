@@ -10,6 +10,7 @@
     <dimen name="length_3">3dp</dimen>
     <dimen name="length_4">4dp</dimen>
     <dimen name="length_8">8dp</dimen>
+    <dimen name="length_12">12dp</dimen>
     <dimen name="length_16">16dp</dimen>
     <dimen name="length_18">18dp</dimen>
     <dimen name="length_20">20dp</dimen>

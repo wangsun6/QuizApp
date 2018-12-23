@@ -14,6 +14,8 @@ import com.wangsun.android.qaapp.sqlite.tables.MemberViewModel
 import com.wangsun.android.qaapp.ui.adapter.AdapterMemberList
 import com.wangsun.android.qaapp.ui.components.ConstantUi
 import kotlinx.android.synthetic.main.activity_member_list.*
+import java.util.*
+
 
 class ActivityMemberList : AppCompatActivity(), AdapterMemberList.OnItemClickListener {
 
@@ -59,7 +61,9 @@ class ActivityMemberList : AppCompatActivity(), AdapterMemberList.OnItemClickLis
         ViewModelProviders.of(this).get(MemberViewModel::class.java).getAllMembers()
             .observe(this, Observer<List<Member>>{
                 it?.let {t1->
-                    mAdapter.setData(t1.toMutableList())
+                    val t2 = t1.toMutableList()
+                    t2.sortWith(Comparator { v1, v2 -> v1.score.compareTo(v2.score) })
+                    mAdapter.setData(t2.asReversed())
                 }
             })
     }

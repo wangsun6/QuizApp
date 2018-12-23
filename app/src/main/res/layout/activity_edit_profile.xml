@@ -22,16 +22,16 @@
             <de.hdodenhof.circleimageview.CircleImageView
                 android:id="@+id/id_profile_image"
                 android:layout_gravity="center"
-                android:layout_width="@dimen/length_104"
-                android:layout_height="@dimen/length_104"
-                android:layout_marginTop="@dimen/length_20"
-                android:layout_marginBottom="@dimen/length_20"
+                android:layout_width="@dimen/length_88"
+                android:layout_height="@dimen/length_88"
+                android:layout_marginTop="@dimen/length_16"
+                android:layout_marginBottom="@dimen/length_8"
                 app:civ_border_color="#FFFFFF"
                 app:civ_border_width="2dp"
                 android:src="@drawable/image_holder"/>
 
             <TextView
-                android:layout_marginBottom="20dp"
+                android:layout_marginBottom="@dimen/length_8"
                 android:id="@+id/id_email"
                 style="@style/commonText"
                 android:hint="Member Email"
@@ -44,8 +44,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:padding="20dp">
-
+            android:padding="@dimen/length_16">
 
             <android.support.design.widget.TextInputLayout
                 android:layout_width="match_parent"
