@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Q&amp;A App</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_admin_main">Admin</string>
+    <string name="title_home">Home</string>
+    <string name="title_leaderboard">Leaderboard</string>
+    <string name="title_settings">Settings</string>
+
+    <!--ActivityMemberHome-->
+    <string name="start_qa"><![CDATA[Satrt Q&A]]></string>
+</resources>

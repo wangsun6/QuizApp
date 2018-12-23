@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.components.member.ActivityMemberHome">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/length_16">
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/id_dp"
+                android:layout_width="@dimen/length_72"
+                android:layout_height="@dimen/length_72"
+                android:layout_marginTop="@dimen/length_20"
+                android:layout_marginBottom="@dimen/length_20"
+                app:civ_border_color="#FFFFFF"
+                app:civ_border_width="2dp"
+                android:src="@drawable/image_holder"
+                android:layout_gravity="center_horizontal"/>
+
+            <TextView
+                android:id="@+id/id_name"
+                style="@style/commonText"
+                android:text="Name Here:"
+                android:gravity="center"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:layout_marginTop="20dp">
+
+                <android.support.v7.widget.CardView
+                    android:layout_margin="5dp"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/id_score"
+                            style="@style/commonText"
+                            android:gravity="center"
+                            android:textColor="@color/colorAccent"/>
+
+                        <TextView
+                            style="@style/commonText"
+                            android:text="Score"
+                            android:gravity="center"/>
+
+                    </LinearLayout>
+
+
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_margin="5dp"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/id_attemted"
+                            style="@style/commonText"
+                            android:gravity="center"
+                            android:textColor="@color/colorAccent"/>
+
+                        <TextView
+                            style="@style/commonText"
+                            android:text="Total Attempted"
+                            android:gravity="center"/>
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+
+            <Button
+                android:layout_marginTop="30dp"
+                android:id="@+id/id_start_btn"
+                style="@style/commonButton_long"
+                android:text="@string/start_qa"/>
+        </LinearLayout>
+    </ScrollView>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/id_content" />
+
+</FrameLayout>

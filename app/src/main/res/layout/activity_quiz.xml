@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".ui.components.member.ActivityQuiz">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/id_score"
+            style="@style/commonText"
+            android:text="Score: 0"/>
+
+        <TextView
+            android:id="@+id/id_countdown"
+            style="@style/commonText"
+            android:text="00:30"
+            android:gravity="end"
+            android:textSize="40sp" />
+
+        <TextView
+            android:id="@+id/id_question"
+            style="@style/commonText"
+            android:layout_above="@id/id_radio_group"
+            android:text="Question Here"
+            android:gravity="center"
+            android:textSize="20sp" />
+
+        <RadioGroup
+            android:id="@+id/id_radio_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/id_radio1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Option 1" />
+
+            <RadioButton
+                android:id="@+id/id_radio2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Option 2" />
+
+            <RadioButton
+                android:id="@+id/id_radio3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Option 3" />
+
+        </RadioGroup>
+
+        <TextView
+            android:visibility="invisible"
+            android:id="@+id/id_answer"
+            style="@style/commonText"
+            android:layout_above="@id/id_radio_group"
+            android:text="Answer Here"
+            android:gravity="center"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/id__confirm_next"
+            style="@style/commonButton_long"
+            android:layout_width="match_parent"
+            android:layout_marginTop="15dp"
+            android:text="Confirm" />
+
+    </LinearLayout>
+
+</ScrollView>

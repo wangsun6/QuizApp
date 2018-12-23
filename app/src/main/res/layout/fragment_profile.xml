@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:tag="tag_profile"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.components.member.FragmentProfile"
+    android:background="@android:color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/primaryLight">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/id_profile_image"
+                android:layout_gravity="center"
+                android:layout_width="@dimen/length_72"
+                android:layout_height="@dimen/length_72"
+                android:layout_marginTop="@dimen/length_20"
+                android:layout_marginBottom="@dimen/length_20"
+                app:civ_border_color="#FFFFFF"
+                app:civ_border_width="2dp"
+                android:src="@drawable/image_holder"/>
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="@dimen/length_16">
+
+            <TextView
+                android:layout_marginTop="@dimen/length_4"
+                style="@style/commonText"
+                android:hint="Name:" />
+
+            <TextView
+                android:id="@+id/id_name"
+                style="@style/commonText"
+                android:hint="Name:"
+                android:textColor="@color/colorPrimaryDark"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/greyLight"
+                android:padding="@dimen/length_4"/>
+
+            <TextView
+                style="@style/commonText"
+                android:hint="Email:" />
+
+            <TextView
+                android:id="@+id/id_email"
+                style="@style/commonText"
+                android:hint="Email:"
+                android:textColor="@color/colorPrimaryDark"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/greyLight"
+                android:padding="@dimen/length_4"/>
+
+            <TextView
+                style="@style/commonText"
+                android:hint="Mobile No.:" />
+
+            <TextView
+                android:id="@+id/id_mobile"
+                style="@style/commonText"
+                android:hint="Mobile No.:"
+                android:textColor="@color/colorPrimaryDark"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/greyLight"
+                android:padding="@dimen/length_4"/>
+
+            <TextView
+                style="@style/commonText"
+                android:hint="Score:"/>
+
+            <TextView
+                android:id="@+id/id_score"
+                style="@style/commonText"
+                android:hint="Score:"
+                android:textColor="@color/colorPrimaryDark"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/greyLight"
+                android:padding="@dimen/length_4"/>
+
+            <TextView
+                style="@style/commonText"
+                android:hint="Total Attempted:"/>
+
+            <TextView
+                android:id="@+id/id_attempted"
+                style="@style/commonText"
+                android:hint="Total Attempted:"
+                android:textColor="@color/colorPrimaryDark"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/greyLight"
+                android:padding="@dimen/length_4"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

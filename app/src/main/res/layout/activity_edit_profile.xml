@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.components.admin.ActivityEditProfile">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/primaryLight">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/id_profile_image"
+                android:layout_gravity="center"
+                android:layout_width="@dimen/length_104"
+                android:layout_height="@dimen/length_104"
+                android:layout_marginTop="@dimen/length_20"
+                android:layout_marginBottom="@dimen/length_20"
+                app:civ_border_color="#FFFFFF"
+                app:civ_border_width="2dp"
+                android:src="@drawable/image_holder"/>
+
+            <TextView
+                android:layout_marginBottom="20dp"
+                android:id="@+id/id_email"
+                style="@style/commonText"
+                android:hint="Member Email"
+                android:gravity="center"
+                android:textColor="@android:color/white"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/id_name"
+                    style="@style/commonEditText_singleLine"
+                    android:hint="Name:"
+                    android:inputType="text"
+                    android:enabled="false"
+                    android:textColor="@android:color/black"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/id_phone"
+                    style="@style/commonEditText_singleLine"
+                    android:hint="Mobile No.:"
+                    android:inputType="text"
+                    android:enabled="false"
+                    android:textColor="@android:color/black"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/id_password"
+                    style="@style/commonEditText_singleLine"
+                    android:hint="Password:"
+                    android:inputType="text"
+                    android:enabled="false"
+                    android:textColor="@android:color/black"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/id_score"
+                    style="@style/commonEditText_singleLine"
+                    android:hint="Score:"
+                    android:inputType="number"
+                    android:enabled="false"
+                    android:textColor="@android:color/black"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/id_attempted"
+                    style="@style/commonEditText_singleLine"
+                    android:hint="Total Attempted:"
+                    android:inputType="number"
+                    android:enabled="false"
+                    android:textColor="@android:color/black"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <Button
+                android:id="@+id/id_save"
+                android:layout_marginTop="30dp"
+                style="@style/commonButton_long"
+                android:text="Edit"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

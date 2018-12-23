@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.components.auth.FragmentMemberLogin">
+    
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="20dp">
+
+            <TextView
+                android:id="@+id/id_select_admin_section"
+                style="@style/commonText"
+                android:gravity="end"
+                android:text="Admin Login"/>
+
+            <TextView
+                style="@style/commonText"
+                android:gravity="center"
+                android:textSize="25sp"
+                android:text="Member Section"
+                android:textColor="@color/colorPrimaryDark"/>
+
+            <!--SignUp-->
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/id_layout_signup"
+                android:layout_marginTop="10sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/dr_circle_grey_200">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        app:srcCompat="@drawable/ic_add_black_24dp" />
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/id_image_picker"
+                        android:layout_width="@dimen/length_72"
+                        android:layout_height="@dimen/length_72"
+                        android:layout_margin="@dimen/length_8"
+                        app:civ_border_color="#FFFFFF"
+                        app:civ_border_width="2dp" />
+
+                    <ImageView
+                        android:layout_width="@dimen/length_32"
+                        android:layout_height="@dimen/length_32"
+                        android:layout_gravity="end|bottom"
+                        android:layout_margin="@dimen/length_4"
+                        android:background="@drawable/dr_circle_primary"
+                        android:elevation="@dimen/length_2"
+                        android:scaleType="centerInside"
+                        app:srcCompat="@drawable/ic_camera_alt_white_18dp" />
+                </FrameLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/id_new_name"
+                        style="@style/commonEditText_singleLine"
+                        android:hint="Enter Full Name:"
+                        android:inputType="text"/>
+
+                </android.support.design.widget.TextInputLayout>
+
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/id_new_phone"
+                        style="@style/commonEditText_singleLine"
+                        android:hint="Enter Mobile No.:"
+                        android:inputType="number"
+                        android:maxLength="10"/>
+
+                </android.support.design.widget.TextInputLayout>
+
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/id_new_email"
+                        style="@style/commonEditText_singleLine"
+                        android:hint="Enter Email:"
+                        android:inputType="textEmailAddress"/>
+
+                </android.support.design.widget.TextInputLayout>
+
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/id_new_password"
+                        style="@style/commonEditText_singleLine"
+                        android:hint="Enter Password:"
+                        android:inputType="textPassword"/>
+                </android.support.design.widget.TextInputLayout>
+
+
+
+                <Button
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/id_signup"
+                    style="@style/commonButton_long"
+                    android:layout_gravity="center"
+                    android:text="Sign Up"
+                    android:background="@drawable/round_border"
+                    android:textColor="@android:color/white"/>
+
+                <LinearLayout
+                    android:layout_marginTop="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+                    <TextView
+                        style="@style/commonText"
+                        android:layout_width="wrap_content"
+                        android:textSize="14sp"
+                        android:gravity="center"
+                        android:text="ALREADY HAVE AN ACCOUNT?"/>
+
+                    <TextView
+                        style="@style/commonText"
+                        android:id="@+id/id_select_login"
+                        android:layout_width="wrap_content"
+                        android:textSize="14sp"
+                        android:gravity="center"
+                        android:text="LOGIN"
+                        android:textColor="@android:color/black"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!--login-->
+            <LinearLayout
+                android:id="@+id/id_layout_login"
+                android:layout_marginTop="10sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/id_email"
+                        style="@style/commonEditText_singleLine"
+                        android:hint="Enter Email:"
+                        android:inputType="textEmailAddress"/>
+                </android.support.design.widget.TextInputLayout>
+
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/id_password"
+                        style="@style/commonEditText_singleLine"
+                        android:hint="Enter Password:"
+                        android:inputType="textPassword"/>
+
+                </android.support.design.widget.TextInputLayout>
+
+                <Button
+                    style="@style/commonButton_long"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/id_login"
+                    android:text="Login"
+                    android:background="@drawable/round_border"
+                    android:textColor="@android:color/white"/>
+
+                <LinearLayout
+                    android:layout_marginTop="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+                    <TextView
+                        style="@style/commonText"
+                        android:layout_width="wrap_content"
+                        android:textSize="14sp"
+                        android:gravity="center"
+                        android:text="DON'T HAVE AN ACCOUNT?"/>
+
+                    <TextView
+                        style="@style/commonText"
+                        android:id="@+id/id_select_signup"
+                        android:layout_width="wrap_content"
+                        android:textSize="14sp"
+                        android:gravity="center"
+                        android:text="SIGN UP"
+                        android:textColor="@android:color/black"/>
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+    <include layout="@layout/progress_dialog"/>
+
+</FrameLayout>

@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.components.auth.FragmentAdminLogin">
+    
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="20dp">
+
+            <TextView
+                android:id="@+id/id_select_member_section"
+                style="@style/commonText"
+                android:gravity="end"
+                android:text="Member Login"/>
+
+            <TextView
+                style="@style/commonText"
+                android:gravity="center"
+                android:textSize="25sp"
+                android:text="Admin Section"
+                android:textColor="@color/colorPrimaryDark"/>
+
+            <!--SignUp-->
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/id_layout_signup"
+                android:layout_marginTop="10sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/id_new_email"
+                        style="@style/commonEditText_singleLine"
+                        android:hint="Enter Email:"
+                        android:inputType="textEmailAddress"/>
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/id_new_password"
+                        style="@style/commonEditText_singleLine"
+                        android:hint="Enter Password:"
+                        android:inputType="textPassword"/>
+                </android.support.design.widget.TextInputLayout>
+
+                <Button
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/id_signup"
+                    style="@style/commonButton_long"
+                    android:layout_gravity="center"
+                    android:text="Sign Up"
+                    android:background="@drawable/round_border"
+                    android:textColor="@android:color/white"/>
+
+                <LinearLayout
+                    android:layout_marginTop="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+                    <TextView
+                        style="@style/commonText"
+                        android:layout_width="wrap_content"
+                        android:textSize="14sp"
+                        android:gravity="center"
+                        android:text="ALREADY HAVE AN ACCOUNT?"/>
+
+                    <TextView
+                        style="@style/commonText"
+                        android:id="@+id/id_select_login"
+                        android:layout_width="wrap_content"
+                        android:textSize="14sp"
+                        android:gravity="center"
+                        android:text="LOGIN"
+                        android:textColor="@android:color/black"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!--login-->
+            <LinearLayout
+                android:id="@+id/id_layout_login"
+                android:layout_marginTop="10sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/id_email"
+                        style="@style/commonEditText_singleLine"
+                        android:hint="Enter Email:"
+                        android:inputType="textEmailAddress"/>
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/id_password"
+                        style="@style/commonEditText_singleLine"
+                        android:hint="Enter Password:"
+                        android:inputType="textPassword"/>
+                </android.support.design.widget.TextInputLayout>
+                <Button
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/id_login"
+                    style="@style/commonButton_long"
+                    android:text="Login"
+                    android:background="@drawable/round_border"
+                    android:textColor="@android:color/white"/>
+
+                <LinearLayout
+                    android:layout_marginTop="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+                    <TextView
+                        style="@style/commonText"
+                        android:layout_width="wrap_content"
+                        android:textSize="14sp"
+                        android:gravity="center"
+                        android:text="DON'T HAVE AN ACCOUNT?"/>
+
+                    <TextView
+                        style="@style/commonText"
+                        android:id="@+id/id_select_signup"
+                        android:layout_width="wrap_content"
+                        android:textSize="14sp"
+                        android:gravity="center"
+                        android:text="SIGN UP"
+                        android:textColor="@android:color/black"/>
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <include layout="@layout/progress_dialog"/>
+</FrameLayout>
