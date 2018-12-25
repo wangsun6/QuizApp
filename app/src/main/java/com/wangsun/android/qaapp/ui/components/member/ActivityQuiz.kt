@@ -1,9 +1,9 @@
 package com.wangsun.android.qaapp.ui.components.member
 
 import android.annotation.SuppressLint
-import android.arch.lifecycle.Observer
-import android.arch.lifecycle.ViewModelProviders
-import android.support.v7.app.AppCompatActivity
+import androidx.lifecycle.Observer
+import androidx.lifecycle.ViewModelProviders
+import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.wangsun.android.qaapp.R
 import com.wangsun.android.qaapp.sqlite.tables.Member

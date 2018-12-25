@@ -1,12 +1,12 @@
 package com.wangsun.android.qaapp.ui.components.admin
 
 import android.app.Activity
-import android.arch.lifecycle.Observer
-import android.arch.lifecycle.ViewModelProviders
+import androidx.lifecycle.Observer
+import androidx.lifecycle.ViewModelProviders
 import android.content.Intent
-import android.support.v7.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.support.v7.widget.LinearLayoutManager
+import androidx.recyclerview.widget.LinearLayoutManager
 import android.view.MenuItem
 import com.wangsun.android.qaapp.R
 import com.wangsun.android.qaapp.sqlite.tables.Member
@@ -51,7 +51,7 @@ class ActivityMemberList : AppCompatActivity(), AdapterMemberList.OnItemClickLis
     }
 
     private fun initAdapter() {
-        id_recycler.layoutManager = LinearLayoutManager(this)
+        id_recycler.layoutManager = androidx.recyclerview.widget.LinearLayoutManager(this)
         id_recycler.adapter = mAdapter
         mAdapter.setOnItemClickListener(this)
         setAdapterData()

@@ -1,10 +1,10 @@
 package com.wangsun.android.qaapp.sqlite
 
-import android.arch.persistence.room.Room
-import android.arch.persistence.room.RoomDatabase
+import androidx.room.Room
+import androidx.room.RoomDatabase
 import android.content.Context
-import android.arch.persistence.db.SupportSQLiteDatabase
-import android.arch.persistence.room.Database
+import androidx.sqlite.db.SupportSQLiteDatabase
+import androidx.room.Database
 import android.os.AsyncTask
 import com.wangsun.android.qaapp.sqlite.tables.*
 

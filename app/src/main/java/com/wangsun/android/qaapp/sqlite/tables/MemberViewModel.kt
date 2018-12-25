@@ -1,9 +1,9 @@
 package com.wangsun.android.qaapp.sqlite.tables
 
 import android.app.Application
-import android.arch.lifecycle.AndroidViewModel
+import androidx.lifecycle.AndroidViewModel
 import android.os.AsyncTask
-import android.arch.lifecycle.LiveData
+import androidx.lifecycle.LiveData
 import com.wangsun.android.qaapp.sqlite.Database1
 
 

@@ -1,9 +1,9 @@
 package com.wangsun.android.qaapp.ui.components.member
 
 
-import android.arch.lifecycle.Observer
+import androidx.lifecycle.Observer
 import android.os.Bundle
-import android.support.v4.app.Fragment
+import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -16,7 +16,7 @@ import com.wangsun.android.qaapp.utilities.UtilFile
 import com.wangsun.android.qaapp.utilities.UtilSharedPreference
 import kotlinx.android.synthetic.main.fragment_profile.*
 
-class FragmentProfile : Fragment() {
+class FragmentProfile : androidx.fragment.app.Fragment() {
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         // Inflate the layout for this fragment
